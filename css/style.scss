@@ -31,4 +31,11 @@ body {
     .rowSpace {
         margin-bottom: 15px;
     }
+    .error__bar, .error__bar2 {
+        color: crimson;
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
 }

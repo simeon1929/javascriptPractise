@@ -37,4 +37,13 @@ body {
 .loginSetion .rowSpace {
   margin-bottom: 15px;
 }
+
+.loginSetion .error__bar, .loginSetion .error__bar2 {
+  color: crimson;
+  display: none;
+}
+
+.loginSetion .error__bar.active, .loginSetion .error__bar2.active {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
