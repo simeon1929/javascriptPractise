@@ -1,0 +1,34 @@
+
+body {
+    margin: 0; padding: 0;
+    background-color: #aecfc7;
+    // background-image: 
+    //     radial-gradient(at 47% 33%, hsl(221.60, 63%, 38%) 0, transparent 59%), 
+    //     radial-gradient(at 82% 65%, hsl(198.33, 78%, 70%) 0, transparent 55%);
+
+}
+
+.loginwarp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100VH;
+    text-align: center;
+}
+.loginSetion {
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    padding: 30px;
+    min-width: 700px;
+    .commonTextBox {
+        background-color: transparent;
+        border: 1px solid #d1d5db;
+        padding: 10px 5px;
+    }
+    .rowSpace {
+        margin-bottom: 15px;
+    }
+}

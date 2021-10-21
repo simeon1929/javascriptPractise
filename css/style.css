@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #aecfc7;
+}
+
+.loginwarp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100VH;
+  text-align: center;
+}
+
+.loginSetion {
+  backdrop-filter: blur(0px) saturate(180%);
+  -webkit-backdrop-filter: blur(0px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  padding: 30px;
+  min-width: 700px;
+}
+
+.loginSetion .commonTextBox {
+  background-color: transparent;
+  border: 1px solid #d1d5db;
+  padding: 10px 5px;
+}
+
+.loginSetion .rowSpace {
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=style.css.map */
