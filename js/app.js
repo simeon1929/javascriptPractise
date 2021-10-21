@@ -65,3 +65,20 @@ console.log('my name is', name , 'and my age is', age);
 //false 
 
 
+//if else condtion
+
+const simeon = 30;
+const beulah = 40;
+const evania = 5;
+
+if(simeon >= beulah) 
+console.log('simeon');
+else if(simeon == evania) {
+    console.log('evaina');
+}
+else if (simeon < beulah) 
+    console.log('beulah');
+else {
+    console.log('worng ');
+}
+
