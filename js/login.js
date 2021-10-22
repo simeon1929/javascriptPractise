@@ -10,19 +10,22 @@ const errorBaar = document.querySelector('.errrorBar')
 loginForm.addEventListener('submit',(e)=>{
     e.preventDefault();
     
-    if (username.value == " " == password ==" ") { 
-        loginerror2.classList.add('active')
-        ///alert('empty') 
-        setTimeout(() => {
-            loginerror2.classList.add('setTimeOut')
-        }, 3000);
+    if(username.value == password.value) {
+        window.location = 'welcome.html'; 
     }
-    else if(username.value == password.value) {
-        console.log('correct'); 
-        window.location = 'welcome.html'; }
+    // else if (username.value == password.value) { 
+    //     loginerror2.classList.add('active')
+    //     ///alert('empty') 
+        
+    // }
+   
+    
     else  {
         loginerror.classList.add('active') 
-        alert('WRONG DATA')
+        setTimeout(() => {
+            loginerror.classList.add('setTimeOut')
+        }, 3000);
+        
     }
 
     
