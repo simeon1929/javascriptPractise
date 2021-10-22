@@ -1,6 +1,10 @@
 const calForm = document.getElementById('marksheet');
 const totalMarks = document.getElementById('totalMarks');
-const grade = document.querySelectorAll('.one');
+const Tgrade = document.querySelector('#Agrade');
+const Egrade = document.querySelector('#Bgrade');
+const Mgrade = document.querySelector('#Cgrade');
+const Sgrade = document.querySelector('#Dgrade');
+const SSgrade = document.querySelector('#Egrade');
 
 
 
@@ -17,16 +21,32 @@ calForm.addEventListener('submit', (e)=>{
     let sum = parseInt(tamil) + parseInt(eng) +parseInt(mat)+ parseInt(sci) + parseInt(socSc)
     totalMarks.innerText = sum
 
-    grade.forEach((element) => {
-      let x= element.innerText = " text please "
+    if(tamil>35) {
+        Tgrade.innerText = "Pass" 
+    }
+    else 
+        Tgrade.innerText = "Fail" 
 
-      console.log(x);
-   });  
-    // if(tamil > 35) 
-    //     grade.innerText = 'Pass'
-    // else 
-    //     grade.innerText = 'fail'
 
-    
-    
+    if(eng>35) 
+        Egrade.innerText = "Pass" 
+    else 
+        Egrade.innerText = "Fail" 
+
+
+    if(mat>35) 
+        Mgrade.innerText = "Pass" 
+    else 
+        Mgrade.innerText = "Fail" 
+
+    if(sci>35) 
+        Sgrade.innerText = "Pass" 
+    else 
+        Sgrade.innerText = "Fail" 
+
+    if(socSc > 35) 
+        SSgrade.innerText = "Pass" 
+    else 
+        SSgrade.innerText = "Fail" ;
+        
 })
