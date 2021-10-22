@@ -4,6 +4,7 @@ const password = document.getElementById('Password')
 const submit = document.getElementById('submit')
 const loginerror = document.querySelector('.error__bar')
 const loginerror2 = document.querySelector('.error__bar2')
+const errorBaar = document.querySelector('.errrorBar')
 
 
 loginForm.addEventListener('submit',(e)=>{
@@ -11,7 +12,10 @@ loginForm.addEventListener('submit',(e)=>{
     
     if (username.value == " " == password ==" ") { 
         loginerror2.classList.add('active')
-        alert('empty') 
+        ///alert('empty') 
+        setTimeout(() => {
+            loginerror2.classList.add('setTimeOut')
+        }, 3000);
     }
     else if(username.value == password.value) {
         console.log('correct'); 
@@ -25,3 +29,6 @@ loginForm.addEventListener('submit',(e)=>{
     loginForm.reset()       
     
 })
+
+//set timeout function
+

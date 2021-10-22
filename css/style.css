@@ -46,4 +46,8 @@ body {
 .loginSetion .error__bar.active, .loginSetion .error__bar2.active {
   display: block;
 }
+
+.loginSetion .error__bar.setTimeOut, .loginSetion .error__bar2.setTimeOut {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
